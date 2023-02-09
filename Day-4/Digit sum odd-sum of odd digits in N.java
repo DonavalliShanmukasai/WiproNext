@@ -1,16 +1,16 @@
-public class EvenOddDigitsSum {
-    public static int evenOddDigitsSum(int input1, String input2) {
-        int evenSum = 0;
-        int totalSum = 0;
-
-        while (input1 != 0) {
-            int digit = input1 % 10;
-            totalSum += digit;
-            if (digit % 2 == 0) evenSum += digit;
-            input1 /= 10;
-        }
-
-        if (input2.equals("even")) return evenSum;
-        else return totalSum - evenSum;
-    }
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+public int OddDigitsSum(int inpu1){
+int sum=0;
+while(input1!=0)
+{
+int n=input1%10;
+if(n%2!=0)
+sum+=n;
+input1/=10; 
+}
+return sum;
+}
 }
